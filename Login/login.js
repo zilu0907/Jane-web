@@ -7,30 +7,23 @@ var country = document.getElementById("country");
 var msg = document.getElementById("msg");
 
 
-function checkAll(e){
-	e.preventDefault()
+function checkAll(){
 	if (user.value === ""){
 	  msg.style.display="block";
       msg.innerHTML = "User is required.";
-      return;
-    }
-    if (email.value === ""){
-	  msg.style.display="block";
-      msg.innerHTML = "Email is required.";
-      return;
+      return false;
     }
     if (pwd.value === ""){
 	  msg.style.display="block";
       msg.innerHTML = "Password is required.";
-      return;
+      return false;
     }
     if (pwd2.value === ""){
 	  msg.style.display="block";
       msg.innerHTML = "Password confirmation is required.";
-      return;
+      return false;
     }
     msg.style.display="block";
     msg.innerHTML = "Login Success.";
-    return;
+    return true;
 }
-form.addEventListener("submit",checkAll);
