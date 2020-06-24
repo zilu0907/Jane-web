@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+  body {
+    background-color: lightblue;
+  }
+  h1 {
+    color: slateblue;
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    font-family: verdana;
+  }
+  h3 {
+    color:slateblue;
+  	font-size:20px;
+  }

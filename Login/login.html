@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    div {
+      width:400px;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+</style>
+</head>
+<body>
+  <div>
+  <form id="form">
+    <h2 style="text-align: center;"> Register With Jane</h3>
+    <label for="user">Username</label>
+    <input type="text" id="user" placeholder="Enter your username">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" placeholder="Enter your email">
+
+    <label for="pwd">Password</label>
+    <input type="text" id="pwd" placeholder="Enter your password">
+
+    <label for="pwd2">Confirm Password</label>
+    <input type="text" id="pwd2" placeholder="Enter your password again">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="china">China</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+    <p id = "msg" style = "display:none">Error Message</p>
+  
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>
