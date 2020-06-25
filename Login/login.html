@@ -11,7 +11,7 @@
       border-radius: 4px;
     }
 
-    input[type=submit] {
+    input[type=submit]{
       width: 100%;
       background-color: #4CAF50;
       color: white;
@@ -37,7 +37,7 @@
 </head>
 <body>
   <div>
-  <form id="form" action="login.php" onsubmit="return checkall()" method="post">
+  <form id="form" action="login.php" method="post" onsubmit="return checkAll()">
     <h2 style="text-align: center;"> Register With Jane</h3>
     <label for="user">Username</label>
     <input type="text" id="user" name="user" placeholder="Enter your username">
@@ -46,10 +46,10 @@
     <input type="text" id="email" name="email" placeholder="Enter your email">
 
     <label for="pwd">Password</label>
-    <input type="text" id="pwd" name="pwd" placeholder="Enter your password">
+    <input type="password" id="pwd" name="pwd" placeholder="Enter your password">
 
     <label for="pwd2">Confirm Password</label>
-    <input type="text" id="pwd2" placeholder="Enter your password again">
+    <input type="password" id="pwd2" placeholder="Enter your password again">
 
     <label for="country">Country</label>
     <select id="country" name="country">

@@ -8,19 +8,24 @@ var msg = document.getElementById("msg");
 
 
 function checkAll(){
-	if (user.value === ""){
-	  msg.style.display="block";
+	  if (user.value == ""){
+	    msg.style.display="block";
       msg.innerHTML = "User is required.";
       return false;
     }
-    if (pwd.value === ""){
-	  msg.style.display="block";
+    if (pwd.value == ""){
+	    msg.style.display="block";
       msg.innerHTML = "Password is required.";
       return false;
     }
-    if (pwd2.value === ""){
-	  msg.style.display="block";
+    if (pwd2.value == ""){
+	    msg.style.display="block";
       msg.innerHTML = "Password confirmation is required.";
+      return false;
+    }
+    if (pwd.value !== pwd2.value){
+      msg.style.display="block";
+      msg.innerHTML = "Passwords do not match.";
       return false;
     }
     msg.style.display="block";
